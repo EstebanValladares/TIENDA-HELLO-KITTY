@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-var{
+    display: flex;
+    width: 100%;
+    & .image-logo{
+        margin: 15px;
+        & img{
+            width: 35vh;
+        }
+    }
+}
