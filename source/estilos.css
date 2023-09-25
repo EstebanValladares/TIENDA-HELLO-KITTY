@@ -1,0 +1,127 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    box-shadow: 0 0 20px 0 rgba(217, 93, 248, 0.185);
+    background: linear-gradient(
+        90deg,
+        rgb(59, 17, 247) 0%,
+        rgb(186, 125, 255) 100%);
+    padding: 50px 35px;
+    border-radius: 25px;
+    display: flex ;
+    flex-direction: column; 
+    text-align: center;
+    width: 400px;
+  
+}
+
+form h1{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin: 0 ;
+}
+
+form p {
+    font-size: 15px;
+    color: rgb(36, 4, 44);
+    margin-bottom: 20px;
+}
+
+.input-wrapper{
+    position: relative;
+    width: auto;
+    margin-bottom: 35px;
+}
+
+input{
+    color: black;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+i{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top:50% ;
+    transform: translateY(-50%);
+}
+
+.btn{ 
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        rgb(116, 84, 233) 0%,
+        rgb(143, 145, 255) 100%);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+.btn::hover{
+    background: rgb(184, 143, 221);
+}
+
+.succes{
+    position: absolute;
+    top: 50px;
+    color: rgb(20, 207, 45);
+    font-size: 20px;
+}
+
+.error{
+    position: absolute;
+    top: 50px;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 10px;
+    }
+    form{
+        box-sizing: content-box;
+        padding: 20px;
+        width: 100%;
+    }
+    .input-wrapper{
+        position: relative;
+        width: 88%;
+        margin-bottom: 35px;
+    }
+
+    input{
+    
+        padding: 20px 0px 20px 45px;
+    }
+    
+    i{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+
+
